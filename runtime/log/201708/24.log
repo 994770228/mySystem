@@ -1,0 +1,1611 @@
+[ 2017-08-24T15:06:21+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/
+[ log ] 127.0.0.1/my/public/ [运行时间：0.072587s][吞吐率：13.78req/s] [内存消耗：1,482.50kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; PHPSESSID=7aqi918j92p489fm9sc4t3ihq3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\my\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-24T15:06:23+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin.html
+[ log ] 127.0.0.1/my/public/admin.html [运行时间：2.197656s][吞吐率：0.46req/s] [内存消耗：5,591.87kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; PHPSESSID=7aqi918j92p489fm9sc4t3ihq3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.013734s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:2.000746s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.763765s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:1.036256s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1503558381) [ RunTime:0.177123s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T15:06:23+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/pub/login.html
+[ log ] 127.0.0.1/my/public/admin/pub/login.html [运行时间：0.250404s][吞吐率：3.99req/s] [内存消耗：5,539.07kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; PHPSESSID=7aqi918j92p489fm9sc4t3ihq3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008011s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ D:\phpStudy\WWW\my\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.055563s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000951s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.027017s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1503558383) [ RunTime:0.000556s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T15:06:24+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/captcha.html
+[ log ] 127.0.0.1/my/public/captcha.html [运行时间：0.377700s][吞吐率：2.65req/s] [内存消耗：1,526.55kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; PHPSESSID=7aqi918j92p489fm9sc4t3ihq3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin/pub/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\my\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-24T15:06:38+08:00 ] 127.0.0.1 127.0.0.1 POST /my/public/admin/pub/checklogin.html
+[ log ] 127.0.0.1/my/public/admin/pub/checklogin.html [运行时间：1.503598s][吞吐率：0.67req/s] [内存消耗：5,734.60kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'checklogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; PHPSESSID=7aqi918j92p489fm9sc4t3ihq3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin/pub/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+  'captcha' => 'wqe3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005976s ]
+[ info ] [ RUN ] app\admin\controller\Pub->checkLogin[ D:\phpStudy\WWW\my\application\admin\controller\Pub.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.011108s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001197s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.222622s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `account` = 'admin'  AND `status` = 1 LIMIT 1 [ RunTime:0.052938s ]
+[ sql ] [ SQL ] UPDATE `tp_admin_user`  SET `last_login_time`=1503558397,`login_count`=login_count+1,`last_login_ip`='127.0.0.1'  WHERE  `id` = 1 [ RunTime:0.030270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.510816s ]
+[ sql ] [ SQL ] INSERT INTO `tp_login_log` (`uid` , `login_ip` , `login_location` , `login_browser` , `login_os`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Chrome(60.0.3112.90)' , 'Windows NT') [ RunTime:0.231560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.008997s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/pub/checklogin.html' , 'admin' , 'Pub' , 'checklogin' , 'POST' , 'a:3:{s:7:\"account\";s:5:\"admin\";s:8:\"password\";s:6:\"123456\";s:7:\"captcha\";s:4:\"wqe3\";}' , 1503558396) [ RunTime:0.000646s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T15:06:38+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/index/index.html
+[ log ] 127.0.0.1/my/public/admin/index/index.html [运行时间：0.320916s][吞吐率：3.12req/s] [内存消耗：5,716.90kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; PHPSESSID=7aqi918j92p489fm9sc4t3ihq3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin/pub/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006598s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\my\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.033352s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000958s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.075059s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) [ RunTime:0.010958s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.026773s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,2,3,4,5)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.021236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.031707s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/index/index.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1503558398) [ RunTime:0.000642s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T15:06:38+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/index/welcome.html
+[ log ] 127.0.0.1/my/public/admin/index/welcome.html [运行时间：0.125754s][吞吐率：7.95req/s] [内存消耗：5,621.35kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; PHPSESSID=7aqi918j92p489fm9sc4t3ihq3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005367s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\my\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.010523s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001002s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.011866s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.008722s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1503558398) [ RunTime:0.000696s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T16:42:14+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/
+[ log ] 127.0.0.1/my/public/ [运行时间：0.257074s][吞吐率：3.89req/s] [内存消耗：1,483.65kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_seccodefbc3e236=174F2wI8L05idlrSBZunjVZ8sZhthdiLeSzaGfAHrFeN9awIC.V; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_sys_key=PeZ3D8d7uZ400WQFsaZT_j6X_U6xrgy6hdaTDn_eI4TnMseNdsyknUwQ3w9WtVfcHN-n4voXrN99Xx7ZrXG-piucNNCT8x2aX80Qu1-aZL_NqY1Pa28Tv5uMrPqZDqD; 0FF2_storemsgnewnum1=0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\my\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-24T16:42:14+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin.html
+[ log ] 127.0.0.1/my/public/admin.html [运行时间：0.259715s][吞吐率：3.85req/s] [内存消耗：5,717.53kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_seccodefbc3e236=174F2wI8L05idlrSBZunjVZ8sZhthdiLeSzaGfAHrFeN9awIC.V; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_sys_key=PeZ3D8d7uZ400WQFsaZT_j6X_U6xrgy6hdaTDn_eI4TnMseNdsyknUwQ3w9WtVfcHN-n4voXrN99Xx7ZrXG-piucNNCT8x2aX80Qu1-aZL_NqY1Pa28Tv5uMrPqZDqD; 0FF2_storemsgnewnum1=0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.072473s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\my\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.021118s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000986s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.023797s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.009318s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,2,3,4,5)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.008917s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1503564134) [ RunTime:0.011007s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T16:42:14+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/index/welcome.html
+[ log ] 127.0.0.1/my/public/admin/index/welcome.html [运行时间：0.094133s][吞吐率：10.62req/s] [内存消耗：5,622.61kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_seccodefbc3e236=174F2wI8L05idlrSBZunjVZ8sZhthdiLeSzaGfAHrFeN9awIC.V; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_sys_key=PeZ3D8d7uZ400WQFsaZT_j6X_U6xrgy6hdaTDn_eI4TnMseNdsyknUwQ3w9WtVfcHN-n4voXrN99Xx7ZrXG-piucNNCT8x2aX80Qu1-aZL_NqY1Pa28Tv5uMrPqZDqD; 0FF2_storemsgnewnum1=0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005676s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\my\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.009867s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000994s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.012694s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.008375s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1503564134) [ RunTime:0.000531s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T16:42:17+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.282358s][吞吐率：3.54req/s] [内存消耗：5,522.06kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_seccodefbc3e236=174F2wI8L05idlrSBZunjVZ8sZhthdiLeSzaGfAHrFeN9awIC.V; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_sys_key=PeZ3D8d7uZ400WQFsaZT_j6X_U6xrgy6hdaTDn_eI4TnMseNdsyknUwQ3w9WtVfcHN-n4voXrN99Xx7ZrXG-piucNNCT8x2aX80Qu1-aZL_NqY1Pa28Tv5uMrPqZDqD; 0FF2_storemsgnewnum1=0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.009408s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000845s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.042453s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000444s ]
+[ error ] [8]未定义数组索引: nickname[D:\phpStudy\WWW\my\runtime\temp\2b807a7a1be11d893b21a202aea83ad8.php:65]
+
+---------------------------------------------------------------
+[ 2017-08-24T16:46:06+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.097431s][吞吐率：10.26req/s] [内存消耗：5,522.66kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_seccodefbc3e236=174F2wI8L05idlrSBZunjVZ8sZhthdiLeSzaGfAHrFeN9awIC.V; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_sys_key=PeZ3D8d7uZ400WQFsaZT_j6X_U6xrgy6hdaTDn_eI4TnMseNdsyknUwQ3w9WtVfcHN-n4voXrN99Xx7ZrXG-piucNNCT8x2aX80Qu1-aZL_NqY1Pa28Tv5uMrPqZDqD; 0FF2_storemsgnewnum1=0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.018877s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002606s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.013126s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000571s ]
+[ error ] [8]未定义数组索引: nickname[D:\phpStudy\WWW\my\runtime\temp\2b807a7a1be11d893b21a202aea83ad8.php:65]
+
+---------------------------------------------------------------
+[ 2017-08-24T16:48:46+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.126385s][吞吐率：7.91req/s] [内存消耗：5,748.78kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_seccodefbc3e236=174F2wI8L05idlrSBZunjVZ8sZhthdiLeSzaGfAHrFeN9awIC.V; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_sys_key=PeZ3D8d7uZ400WQFsaZT_j6X_U6xrgy6hdaTDn_eI4TnMseNdsyknUwQ3w9WtVfcHN-n4voXrN99Xx7ZrXG-piucNNCT8x2aX80Qu1-aZL_NqY1Pa28Tv5uMrPqZDqD; 0FF2_storemsgnewnum1=0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005734s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012626s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000953s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.009466s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000392s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001038s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010087s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503564526) [ RunTime:0.000666s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T16:49:14+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.088214s][吞吐率：11.34req/s] [内存消耗：5,747.77kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_seccodefbc3e236=174F2wI8L05idlrSBZunjVZ8sZhthdiLeSzaGfAHrFeN9awIC.V; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_sys_key=PeZ3D8d7uZ400WQFsaZT_j6X_U6xrgy6hdaTDn_eI4TnMseNdsyknUwQ3w9WtVfcHN-n4voXrN99Xx7ZrXG-piucNNCT8x2aX80Qu1-aZL_NqY1Pa28Tv5uMrPqZDqD; 0FF2_storemsgnewnum1=0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006332s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.015804s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001123s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.014097s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000354s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002220s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011348s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503564554) [ RunTime:0.000809s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T17:26:25+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin.html
+[ log ] 127.0.0.1/my/public/admin.html [运行时间：0.121296s][吞吐率：8.24req/s] [内存消耗：5,717.86kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_sys_key=PeZ3D8d7uZ400WQFsaZT_j6X_U6xrgy6hdaTDn_eI4TnMseNdsyknUwQ3w9WtVfcHN-n4voXrN99Xx7ZrXG-piucNNCT8x2aX80Qu1-aZL_NqY1Pa28Tv5uMrPqZDqD; 0FF2_storemsgnewnum1=0; Huiskin=yellow',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.015156s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\my\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.011618s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002450s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.030913s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.009745s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,2,3,4,5)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.009837s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1503566785) [ RunTime:0.000864s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T17:26:25+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/index/welcome.html
+[ log ] 127.0.0.1/my/public/admin/index/welcome.html [运行时间：0.124622s][吞吐率：8.02req/s] [内存消耗：5,622.38kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_sys_key=PeZ3D8d7uZ400WQFsaZT_j6X_U6xrgy6hdaTDn_eI4TnMseNdsyknUwQ3w9WtVfcHN-n4voXrN99Xx7ZrXG-piucNNCT8x2aX80Qu1-aZL_NqY1Pa28Tv5uMrPqZDqD; 0FF2_storemsgnewnum1=0; Huiskin=yellow',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.009506s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\my\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.016018s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001038s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.041129s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.013686s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1503566785) [ RunTime:0.000767s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T17:26:44+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.089024s][吞吐率：11.23req/s] [内存消耗：5,747.88kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_sys_key=PeZ3D8d7uZ400WQFsaZT_j6X_U6xrgy6hdaTDn_eI4TnMseNdsyknUwQ3w9WtVfcHN-n4voXrN99Xx7ZrXG-piucNNCT8x2aX80Qu1-aZL_NqY1Pa28Tv5uMrPqZDqD; 0FF2_storemsgnewnum1=0; Huiskin=yellow',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008112s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012970s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000939s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.011644s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000484s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001286s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.009817s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503566804) [ RunTime:0.000790s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T17:34:35+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.089346s][吞吐率：11.19req/s] [内存消耗：5,749.16kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_sys_key=PeZ3D8d7uZ400WQFsaZT_j6X_U6xrgy6hdaTDn_eI4TnMseNdsyknUwQ3w9WtVfcHN-n4voXrN99Xx7ZrXG-piucNNCT8x2aX80Qu1-aZL_NqY1Pa28Tv5uMrPqZDqD; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.014009s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.011758s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002081s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.010475s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000520s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001326s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.008740s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503567275) [ RunTime:0.000602s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T17:35:19+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.055598s][吞吐率：17.99req/s] [内存消耗：5,497.64kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_sys_key=PeZ3D8d7uZ400WQFsaZT_j6X_U6xrgy6hdaTDn_eI4TnMseNdsyknUwQ3w9WtVfcHN-n4voXrN99Xx7ZrXG-piucNNCT8x2aX80Qu1-aZL_NqY1Pa28Tv5uMrPqZDqD; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004466s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012508s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001041s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.008571s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000428s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000859s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010241s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503567319) [ RunTime:0.000581s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T17:39:14+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.083695s][吞吐率：11.95req/s] [内存消耗：5,748.95kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_sys_key=PeZ3D8d7uZ400WQFsaZT_j6X_U6xrgy6hdaTDn_eI4TnMseNdsyknUwQ3w9WtVfcHN-n4voXrN99Xx7ZrXG-piucNNCT8x2aX80Qu1-aZL_NqY1Pa28Tv5uMrPqZDqD; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005103s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.011341s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010228s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.010912s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000446s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000934s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.008870s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503567554) [ RunTime:0.000634s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T17:45:03+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.126312s][吞吐率：7.92req/s] [内存消耗：5,748.89kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.019242s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.018390s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003618s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.013352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000601s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001259s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.014659s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503567902) [ RunTime:0.000963s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T17:45:14+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.057881s][吞吐率：17.28req/s] [内存消耗：5,497.58kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005096s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.014263s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001079s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.009318s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000434s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000866s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011134s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503567914) [ RunTime:0.000976s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T17:54:53+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.092524s][吞吐率：10.81req/s] [内存消耗：5,748.88kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.011761s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.022719s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001921s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.010663s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000436s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010659s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010466s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503568493) [ RunTime:0.000653s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T17:57:16+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.071449s][吞吐率：14.00req/s] [内存消耗：5,497.55kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006594s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012331s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001293s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.009689s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000450s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001063s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.009619s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503568636) [ RunTime:0.000537s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T17:58:25+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.322257s][吞吐率：3.10req/s] [内存消耗：5,748.98kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005254s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.013981s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000921s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.261820s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000678s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000982s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011120s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503568705) [ RunTime:0.000768s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T17:58:26+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.257769s][吞吐率：3.88req/s] [内存消耗：5,497.56kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.009064s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.023917s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000893s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.168974s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000471s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001815s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.018063s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503568706) [ RunTime:0.000960s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T17:59:14+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.061195s][吞吐率：16.34req/s] [内存消耗：5,748.91kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004862s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.011309s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000995s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.010321s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000426s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000918s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.008920s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503568754) [ RunTime:0.000548s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T18:00:24+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.091558s][吞吐率：10.92req/s] [内存消耗：5,748.96kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008179s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.014554s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001132s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.012582s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000393s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001345s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011519s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503568824) [ RunTime:0.000704s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T18:00:32+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.077910s][吞吐率：12.84req/s] [内存消耗：5,497.57kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008380s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.015570s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001094s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.011917s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000430s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001165s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.012477s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503568832) [ RunTime:0.000650s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T18:10:44+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin.html
+[ log ] 127.0.0.1/my/public/admin.html [运行时间：0.124509s][吞吐率：8.03req/s] [内存消耗：5,717.52kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.016912s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\my\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.015046s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003098s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.014617s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.012965s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,2,3,4,5)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.012966s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1503569444) [ RunTime:0.000961s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T18:10:44+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/index/welcome.html
+[ log ] 127.0.0.1/my/public/admin/index/welcome.html [运行时间：0.133863s][吞吐率：7.47req/s] [内存消耗：5,621.84kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008377s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\my\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.027494s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001117s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.043489s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.024963s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1503569444) [ RunTime:0.000944s ]
+
+---------------------------------------------------------------
+[ 2017-08-24T18:10:45+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/cars/index.html
+[ log ] 127.0.0.1/my/public/admin/cars/index.html [运行时间：0.082851s][吞吐率：12.07req/s] [内存消耗：5,497.57kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cars',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=7aqi918j92p489fm9sc4t3ihq3; MyCssSkin=skin_0; 0FF2_msgnewnum2=0; 0FF2_cart_goods_num=0; 0FF2_storemsgnewnum1=0; Huiskin=blue',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005123s ]
+[ info ] [ RUN ] app\admin\controller\Cars->index[ D:\phpStudy\WWW\my\application\admin\controller\Cars.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\cars\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.016095s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000998s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cars` [ RunTime:0.015741s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cars` [ RunTime:0.000544s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004065s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010382s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/cars/index.html' , 'admin' , 'Cars' , 'index' , 'GET' , 'a:0:{}' , 1503569445) [ RunTime:0.000591s ]
+
+---------------------------------------------------------------

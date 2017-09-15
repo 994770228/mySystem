@@ -1,0 +1,7 @@
+/**
+ * 手记
+ */
+
+1.去除右下角的trace图标:
+application/config.php中的'SHOW_PAGE_TRACE'=> false,即可
+

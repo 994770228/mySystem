@@ -1,0 +1,467 @@
+[ 2017-09-01T10:06:50+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/
+[ log ] 127.0.0.1/my/public/ [运行时间：0.419168s][吞吐率：2.39req/s] [内存消耗：1,482.59kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; Huiskin=blue; PHPSESSID=6j5h23pe16lkh0i7thb42qe7l0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\my\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-01T10:06:51+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin.html
+[ log ] 127.0.0.1/my/public/admin.html [运行时间：0.659306s][吞吐率：1.52req/s] [内存消耗：5,592.32kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; Huiskin=blue; PHPSESSID=6j5h23pe16lkh0i7thb42qe7l0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.161916s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.248494s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032036s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.078511s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1504231610) [ RunTime:0.061399s ]
+
+---------------------------------------------------------------
+[ 2017-09-01T10:06:51+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/pub/login.html
+[ log ] 127.0.0.1/my/public/admin/pub/login.html [运行时间：0.196223s][吞吐率：5.10req/s] [内存消耗：5,539.16kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; Huiskin=blue; PHPSESSID=6j5h23pe16lkh0i7thb42qe7l0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006890s ]
+[ info ] [ RUN ] app\admin\controller\Pub->login[ D:\phpStudy\WWW\my\application\admin\controller\Pub.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\pub\login.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.037868s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001222s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.015827s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/pub/login.html' , 'admin' , 'Pub' , 'login' , 'GET' , 'a:0:{}' , 1504231611) [ RunTime:0.000856s ]
+
+---------------------------------------------------------------
+[ 2017-09-01T10:06:52+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/captcha.html
+[ log ] 127.0.0.1/my/public/captcha.html [运行时间：0.357949s][吞吐率：2.79req/s] [内存消耗：1,526.80kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; Huiskin=blue; PHPSESSID=6j5h23pe16lkh0i7thb42qe7l0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin/pub/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpStudy\WWW\my\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-01T10:07:05+08:00 ] 127.0.0.1 127.0.0.1 POST /my/public/admin/pub/checklogin.html
+[ log ] 127.0.0.1/my/public/admin/pub/checklogin.html [运行时间：0.681381s][吞吐率：1.47req/s] [内存消耗：5,734.84kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pub',
+    2 => 'checklogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; Huiskin=blue; PHPSESSID=6j5h23pe16lkh0i7thb42qe7l0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin/pub/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+  'captcha' => 'wyaz',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.018810s ]
+[ info ] [ RUN ] app\admin\controller\Pub->checkLogin[ D:\phpStudy\WWW\my\application\admin\controller\Pub.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.032451s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002414s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.041056s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `account` = 'admin'  AND `status` = 1 LIMIT 1 [ RunTime:0.001053s ]
+[ sql ] [ SQL ] UPDATE `tp_admin_user`  SET `last_login_time`=1504231625,`login_count`=login_count+1,`last_login_ip`='127.0.0.1'  WHERE  `id` = 1 [ RunTime:0.001554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.050879s ]
+[ sql ] [ SQL ] INSERT INTO `tp_login_log` (`uid` , `login_ip` , `login_location` , `login_browser` , `login_os`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Chrome(60.0.3112.90)' , 'Windows NT') [ RunTime:0.040120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.028725s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (0 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/pub/checklogin.html' , 'admin' , 'Pub' , 'checklogin' , 'POST' , 'a:3:{s:7:\"account\";s:5:\"admin\";s:8:\"password\";s:6:\"123456\";s:7:\"captcha\";s:4:\"wyaz\";}' , 1504231625) [ RunTime:0.001306s ]
+
+---------------------------------------------------------------
+[ 2017-09-01T10:07:06+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/index/index.html
+[ log ] 127.0.0.1/my/public/admin/index/index.html [运行时间：0.214607s][吞吐率：4.66req/s] [内存消耗：5,716.88kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; Huiskin=blue; PHPSESSID=6j5h23pe16lkh0i7thb42qe7l0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin/pub/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.008730s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\my\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ RUN ] app\admin\widget\Index->menu[ D:\phpStudy\WWW\my\application\admin\widget\Index.php ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.011090s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000807s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.034449s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.038590s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,2,3,4,5)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.009682s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/index/index.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1504231626) [ RunTime:0.000604s ]
+
+---------------------------------------------------------------
+[ 2017-09-01T10:07:06+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/index/welcome.html
+[ log ] 127.0.0.1/my/public/admin/index/welcome.html [运行时间：0.163104s][吞吐率：6.13req/s] [内存消耗：5,621.47kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; Huiskin=blue; PHPSESSID=6j5h23pe16lkh0i7thb42qe7l0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005193s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\WWW\my\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.010223s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010577s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.008681s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.008937s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1504231626) [ RunTime:0.000536s ]
+
+---------------------------------------------------------------
+[ 2017-09-01T10:07:19+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/demo/excel.html
+[ log ] 127.0.0.1/my/public/admin/demo/excel.html [运行时间：0.128611s][吞吐率：7.78req/s] [内存消耗：5,815.20kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'demo',
+    2 => 'excel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; Huiskin=blue; PHPSESSID=6j5h23pe16lkh0i7thb42qe7l0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006437s ]
+[ info ] [ RUN ] app\admin\controller\Demo->excel[ D:\phpStudy\WWW\my\application\admin\controller\Demo.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\demo\excel.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.017792s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000928s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.008505s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/demo/excel.html' , 'admin' , 'Demo' , 'excel' , 'GET' , 'a:0:{}' , 1504231639) [ RunTime:0.000514s ]
+
+---------------------------------------------------------------
+[ 2017-09-01T10:07:23+08:00 ] 127.0.0.1 127.0.0.1 POST /my/public/admin/demo/excel.html
+[ log ] 127.0.0.1/my/public/admin/demo/excel.html [运行时间：0.776674s][吞吐率：1.29req/s] [内存消耗：9,755.63kb] [文件加载：128]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'demo',
+    2 => 'excel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; Huiskin=blue; PHPSESSID=6j5h23pe16lkh0i7thb42qe7l0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin/demo/excel.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.010370s ]
+[ info ] [ RUN ] app\admin\controller\Demo->excel[ D:\phpStudy\WWW\my\application\admin\controller\Demo.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.019073s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001253s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.008957s ]
+[ sql ] [ SQL ] SELECT `uid`,`login_ip`,`login_location`,`login_browser`,`login_os`,`login_time` FROM `tp_login_log` ORDER BY id desc LIMIT 20 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.016857s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/demo/excel.html' , 'admin' , 'Demo' , 'excel' , 'POST' , 'a:0:{}' , 1504231642) [ RunTime:0.000830s ]
+
+---------------------------------------------------------------
+[ 2017-09-01T10:07:32+08:00 ] 127.0.0.1 127.0.0.1 GET /my/public/admin/demo/qiniu.html
+[ log ] 127.0.0.1/my/public/admin/demo/qiniu.html [运行时间：0.118820s][吞吐率：8.42req/s] [内存消耗：5,817.80kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\WWW\my\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'demo',
+    2 => 'qiniu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'MyCssSkin=skin_0; Huiskin=blue; PHPSESSID=6j5h23pe16lkh0i7thb42qe7l0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/my/public/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.014722s ]
+[ info ] [ RUN ] app\admin\controller\Demo->qiniu[ D:\phpStudy\WWW\my\application\admin\controller\Demo.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\my\public/../application/admin\view\demo\qiniu.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.021678s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001965s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.008850s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows NT' , 'Chrome(60.0.3112.90)' , 'http://127.0.0.1/my/public/admin/demo/qiniu.html' , 'admin' , 'Demo' , 'qiniu' , 'GET' , 'a:0:{}' , 1504231652) [ RunTime:0.000625s ]
+
+---------------------------------------------------------------

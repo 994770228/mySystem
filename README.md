@@ -76,4 +76,4 @@ https://github.com/yuan1994/tpadmin/archive/master.zip
 >非常感谢这些框架、插件的支持
 
 ## License
-Apache 2.0  
+Apache 2.0

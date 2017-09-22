@@ -52,4 +52,31 @@ class Cars extends Controller
 		echo 1;
 	}
 
+	//修改
+	public function edit(){
+		$id = $_GET['id'];
+		$info = db('cars')->where('id',$id)->find();
+		$this->assign('info',$info);
+		return $this->fetch();
+	}
+
+	//ajax修改
+	public function ajax_edit_c(){
+		$c_id = $_POST['c_id'];
+		$data['car_num'] = $_POST['name1'];
+		$data['status'] = $_POST['optionsRadios'];
+		$data['checkbox1'] = $_POST['checkbox1'];
+		$data['account'] = $_POST['account'];
+		$data['time1'] = strtotime($_POST['time1']);
+		$time2 = explode('/', $_POST['time2']);
+		$data['time2'] = strtotime($time2['0']);
+		$data['time3'] = strtotime($time2['1']);
+		$data['create_time'] = time();
+		$add = db('cars')->where('id',$c_id)->update($data);
+		if($add){
+			echo 1;
+		}else{
+			echo 2;
+		}
+	}
 }

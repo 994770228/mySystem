@@ -111,7 +111,28 @@
     }
     //编辑
     function edit(){
-      get_ids_checked();
+      ids = get_ids_checked();
+      if(ids == ''){
+        alert('请先选择数据哦!!');return false;
+      }
+      if(ids.length > 1){
+        alert('只能对单条数据进行修改哦!');return false;
+      }
+      
+      layui.use('layer', function(){
+        var layer = layui.layer;
+        
+        layer.open({
+          type: 2,
+          title: ['修改', 'font-size:18px;'],
+          closeBtn: 1,
+          shadeClose: true,
+          skin: 'add_form',
+          area: ['70%','70%'],
+          offset: ['20%', '12%'],
+          content: ["{:url('Cars/edit')}?id="+ids]
+        });
+      });
     }
     //删除
     function del(){
@@ -152,7 +173,7 @@
         layer.open({
           type: 2,
           title: ['新增', 'font-size:18px;'],
-          closeBtn: 2,
+          closeBtn: 1,
           shadeClose: true,
           skin: 'add_form',
           area: ['70%','70%'],
@@ -162,6 +183,8 @@
       });  
      
     })
+
+    
     </script>
 </body>
 

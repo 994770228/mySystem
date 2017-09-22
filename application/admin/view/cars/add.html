@@ -27,7 +27,8 @@
         }
     </style>
 </head>
-
+<script src="__STATIC__/my/news/js/jquery.min.js?v=2.1.4"></script>
+<!-- <script src="__STATIC__/my/news/js/notRefreshFilesUpload.js"></script> -->
 <body class="gray-bg">
     <div class="wrapper wrapper-content animated fadeInRight">
         
@@ -37,7 +38,7 @@
                 <div class="ibox float-e-margins">
                    
                     <div class="ibox-content">
-                        <form method="post" class="form-horizontal" action="" >
+                        <form method="post" class="form-horizontal" action="" target="dynamic_creation_upload_iframe" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">车牌号</label>
                                 <div class="col-sm-10">
@@ -102,6 +103,9 @@
                                 <input type="text" class="layui-input" id="test10" name="time2" value='<?php echo date("Y-m-d H:i:s",mktime(0,0,0,date("m",time()),date("d",time()),date("Y",time())))?>/<?php echo date("Y-m-d H:i:s",mktime(23,59,59,date("m",time()),date("d",time()),date("Y",time())))?>'>
                               </div>
                             </div>
+                            <div class="hr-line-dashed"></div>
+                            
+                            
 
                             <div class="hr-line-dashed"></div>
 
@@ -114,18 +118,20 @@
                             
 
                         </form>
+                      
+                     
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="__STATIC__/my/news/js/jquery.min.js?v=2.1.4"></script>
+    
     <script src="__STATIC__/my/news/js/bootstrap.min.js?v=3.3.5"></script>
     <script src="__STATIC__/my/news/js/content.min.js?v=1.0.0"></script>
     <script src="__STATIC__/my/news/js/plugins/iCheck/icheck.min.js"></script>
     <script src="__STATIC__/my/layui/layui.all.js"></script>
-    <!-- <script src="__STATIC__/my/news/js/wcj.js"></script> -->
+    
     <script>
         $(document).ready(function(){$(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})});
     </script>
@@ -192,7 +198,7 @@
                         layui.use('layer', function(){
                           var layer = layui.layer;
                           layer.msg('成功', {icon: 6});
-                        });  
+                        });
                     }else{
                         layui.use('layer', function(){
                           var layer = layui.layer;
@@ -205,6 +211,7 @@
 
         
     </script>
+
     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
 </body>
 

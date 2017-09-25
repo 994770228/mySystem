@@ -28,6 +28,9 @@ class Cars extends Controller
 	//ajax新增
 	public function ajax_add_c(){
 		$data['car_num'] = $_POST['name1'];
+		$data['province'] = $_POST['province'];
+		$data['city'] = $_POST['city'];
+		$data['district'] = $_POST['district'];
 		$data['status'] = $_POST['optionsRadios'];
 		$data['checkbox1'] = $_POST['checkbox1'];
 		$data['account'] = $_POST['account'];
@@ -64,6 +67,9 @@ class Cars extends Controller
 	public function ajax_edit_c(){
 		$c_id = $_POST['c_id'];
 		$data['car_num'] = $_POST['name1'];
+		$data['province'] = $_POST['province'];
+		$data['city'] = $_POST['city'];
+		$data['district'] = $_POST['district'];
 		$data['status'] = $_POST['optionsRadios'];
 		$data['checkbox1'] = $_POST['checkbox1'];
 		$data['account'] = $_POST['account'];

@@ -61,6 +61,23 @@ function checkedVal(hidVal,name){
                                 </div>
                             </div>
                            
+                           <div class="form-group">
+                               <label class="col-sm-2 control-label">地址</label>
+                              <div data-toggle="distpicker">
+                               <div class="col-xs-3">
+                                  <label class="sr-only" for="province1">省</label>
+                                  <select class="form-control" id="province1" data-province="{$info['province']}"></select>
+                               </div>
+                               <div class="col-xs-3">
+                                  <label class="sr-only" for="city1">市</label>
+                                  <select class="form-control" id="city1" data-city="{$info['city']}"></select>
+                               </div>
+                               <div class="col-xs-3">
+                                  <label class="sr-only" for="district1">区</label>
+                                  <select class="form-control" id="district1" data-district="{$info['district']}"></select>
+                               </div>
+                              </div>
+                           </div>
                           
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
@@ -160,6 +177,10 @@ function checkedVal(hidVal,name){
     <script src="__STATIC__/my/news/js/plugins/iCheck/icheck.min.js"></script>
     <script src="__STATIC__/my/layui/layui.all.js"></script>
     
+    <!-- 省市区插件 -->
+    <script src="__STATIC__/pro-city-town/js/distpicker.data.js"></script>
+    <script src="__STATIC__/pro-city-town/js/distpicker.js"></script>
+    <script src="__STATIC__/pro-city-town/js/main.js"></script>
     <script>
         $(document).ready(function(){$(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})});
     </script>
@@ -196,6 +217,19 @@ function checkedVal(hidVal,name){
             // if(name1 == ''){
             //     alert('请输入车牌号');return false;
             // }
+
+            var province = $('#province1').val();
+            var city = $('#city1').val();
+            var district = $('#district1').val();
+            if(province == ''){
+                alert('请选择省份');return false;
+            }
+            if(city == ''){
+                alert('请选择城市');return false;
+            }
+            if(district == ''){
+                alert('请选择地区');return false;
+            }
             var optionsRadios = $('#optionsRadios input[name="optionsRadios"]:checked ').val();
             var one = get_ids_checked();
             // if(one == ''){
@@ -212,6 +246,9 @@ function checkedVal(hidVal,name){
             var data = {
                 c_id:c_id,
                 name1:name1,
+                province:province,
+                city:city,
+                district:district,
                 optionsRadios:optionsRadios,
                 checkbox1:checkbox1,
                 account:account,

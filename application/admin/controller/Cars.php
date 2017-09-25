@@ -62,7 +62,7 @@ class Cars extends Controller
 		$this->assign('info',$info);
 		return $this->fetch();
 	}
-
+ 
 	//ajax修改
 	public function ajax_edit_c(){
 		$c_id = $_POST['c_id'];

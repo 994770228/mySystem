@@ -10,7 +10,7 @@ namespace app\admin\controller;
 use think\Controller;
 
 /**
-* 新闻管理
+* 地图管理
 */
 class Maps extends Controller
 {

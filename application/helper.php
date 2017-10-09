@@ -71,3 +71,4 @@ function download($file_path, $file_name = '', $file_size = '', $ext = '')
 {
     return \File::download($file_path, $file_name, $file_size, $ext);
 }
+

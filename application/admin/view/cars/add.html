@@ -214,7 +214,7 @@
             var time2 = $('#test10').val();
             var data = {
                 name1:name1,
-                province1:province1,
+                province:province,
                 city:city,
                 district:district,
                 optionsRadios:optionsRadios,
@@ -223,6 +223,7 @@
                 time1:time1,
                 time2:time2
             }
+         
             $.ajax({
                 type:'post',
                 url:"{:url('cars/ajax_add_c')}",

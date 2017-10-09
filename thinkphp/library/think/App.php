@@ -431,7 +431,7 @@ class App
                     }
                 }
             }
-
+// dump($config['extra_file_list']);
             // 设置系统时区
             date_default_timezone_set($config['default_timezone']);
 

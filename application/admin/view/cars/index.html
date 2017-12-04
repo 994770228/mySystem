@@ -60,7 +60,7 @@
                             </thead>
                             <tbody>
                             <?php foreach($info as $k=>$val):?>
-                                <tr>
+                                <tr id="d{$val.id}">
                                     <td><input type="checkbox" name="one" value="{$val.id}"></td>
                                     <td>{$val.id}</td>
                                     <td>{$val.car_num}</td>
@@ -156,7 +156,14 @@
                   layui.use('layer', function(){
                     var layer = layui.layer;
                     layer.msg('删除成功', {icon: 6});
-                    setTimeout("window.location.reload()",4000);//4秒后刷新
+                    str=$('.mark').val(); //这是一字符串 
+                    var strs= new Array(); //定义一数组 
+                    strs=str.split(","); //字符分割 
+                    for (i=0;i<strs.length ;i++ ) 
+                    { 
+                    $("#d"+strs[i]).hide();
+                    }
+                    // setTimeout("window.location.reload()",4000);//4秒后刷新
                     // location.reload();
                   }); 
               }

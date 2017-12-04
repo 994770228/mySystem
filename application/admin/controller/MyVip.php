@@ -29,10 +29,15 @@ class MyVip extends Controller
         return $this->fetch();
     }
 
-    //新增
-    public function add(){
-    	return $this->fetch();
-    }
+    
 
+    //ajax批量删除
+    public function ajax_del_c(){
+        $ids = explode(',',$_POST['ids']);
+        foreach($ids as $k=>$val){
+            db('wxuser')->where('id',$val)->delete();
+        }
+        echo 1;
+    }
    
 }

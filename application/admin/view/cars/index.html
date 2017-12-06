@@ -128,7 +128,7 @@
           closeBtn: 1,
           shadeClose: true,
           skin: 'add_form',
-          area: ['70%','70%'],
+          area: ['100%','100%'],
           offset: ['20%', '12%'],
           content: ["{:url('Cars/edit')}?id="+ids]
         });
@@ -176,15 +176,14 @@
     $('.add').click(function(){
       layui.use('layer', function(){
         var layer = layui.layer;
-        
         layer.open({
           type: 2,
           title: ['新增', 'font-size:18px;'],
           closeBtn: 1,
           shadeClose: true,
           skin: 'add_form',
-          area: ['70%','70%'],
-          offset: ['20%', '12%'],
+          area: ['100%','100%'],
+          offset: ['15%', '12%'],
           content: ["{:url('Cars/add')}"]
         });
       });  

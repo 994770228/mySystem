@@ -45,7 +45,16 @@
                                     <input type="text" name='name1'  placeholder="请输入车牌号" class="form-control name1">
                                 </div>
                             </div>
-                  
+                            <div class="hr-line-dashed"></div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">图片</label>
+                                <div class="col-sm-10">
+                                    <input type="file" class="form-control fileupload" name="file" id="fileupload">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">地址</label>
                                <div data-toggle="distpicker">
@@ -152,6 +161,10 @@
     <script src="__STATIC__/pro-city-town/js/distpicker.data.js"></script>
     <script src="__STATIC__/pro-city-town/js/distpicker.js"></script>
     <script src="__STATIC__/pro-city-town/js/main.js"></script>
+    <!-- 图片上传插件 -->
+    <script src="__LIB__/jQuery-File-Upload/js/vendor/jquery.ui.widget.js"></script>
+    <script src="__LIB__/jQuery-File-Upload/js/jquery.iframe-transport.js"></script>
+    <script src="__LIB__/jQuery-File-Upload/js/jquery.fileupload.js"></script>
     <script>
         $(document).ready(function(){$(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})});
     </script>
@@ -212,6 +225,9 @@
             // }
             var time1 = $('#test1').val();
             var time2 = $('#test10').val();
+            //获取图片信息
+ 
+           
             var data = {
                 name1:name1,
                 province:province,
@@ -221,9 +237,10 @@
                 checkbox1:checkbox1,
                 account:account,
                 time1:time1,
-                time2:time2
+                time2:time2,
+               
             }
-         
+       // console.log(data);return false;  
             $.ajax({
                 type:'post',
                 url:"{:url('cars/ajax_add_c')}",
@@ -248,7 +265,8 @@
             })
         }
 
-        
+       
+       
     </script>
 
     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>

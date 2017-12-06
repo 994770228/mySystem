@@ -8,6 +8,7 @@
 namespace app\admin\controller;
 
 use think\Controller;
+use think\Cache;
 
 /**
 * 车辆管理
@@ -16,10 +17,9 @@ class Cars extends Controller
 {
 	
 	public function index(){
-		// require( APP_PATH . 'function' . EXT) ;
-		// $aa = Cache::set('name','dd',3600);
-		// dump($this->get_my_info());
-		// dump(APP_PATH);
+		// Cache::set('chen','112yan',3600);  
+		//        $a=Cache::get('chen');  
+		//        echo $a;
 		$info = db('cars')->select();
 		$this->assign('info',$info);
 		return $this->fetch();
@@ -31,7 +31,6 @@ class Cars extends Controller
 	}
 	//ajax新增
 	public function ajax_add_c(){
-		// dump(input('post.'));
 		$data['car_num'] = $_POST['name1'];
 		$data['province'] = $_POST['province'];
 		$data['city'] = $_POST['city'];
